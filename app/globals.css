@@ -604,6 +604,69 @@ button {
   font-weight: 300;
 }
 
+/* Instagram CTA card (replaces the old CMS placeholder) */
+.aktion-card--insta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px 28px;
+  color: white;
+  background: linear-gradient(135deg, #7a2bbf 0%, #c91f6d 50%, #f2792b 100%);
+  border-color: transparent;
+}
+.aktion-card--insta:hover {
+  border-color: transparent;
+}
+.aktion-insta-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aktion-insta-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
+}
+.aktion-card--insta h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: white;
+}
+.aktion-card--insta p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+}
+.aktion-card--insta p strong {
+  font-weight: 600;
+  color: white;
+}
+.aktion-insta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: white;
+  transition: gap 0.2s var(--ease);
+}
+.aktion-card--insta:hover .aktion-insta-link {
+  gap: 14px;
+}
+
 /* ── GALLERY (Bento) ── */
 .gallery-outer {
   background: var(--white);

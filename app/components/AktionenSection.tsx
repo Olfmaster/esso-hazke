@@ -42,31 +42,42 @@ export default function AktionenSection() {
             </p>
           </div>
         </div>
-        <div
-          className="aktion-card gsap-up"
-          style={{
-            borderStyle: "dashed",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            minHeight: 160,
-          }}
+        <a
+          href="https://www.instagram.com/esso_badwildungen"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="aktion-card aktion-card--insta gsap-up"
         >
-          <div style={{ textAlign: "center", color: "var(--muted)" }}>
-            <div
-              style={{ fontSize: 28, marginBottom: 8, color: "var(--red)" }}
-            >
-              +
-            </div>
-            <div style={{ fontSize: 14, fontWeight: 500 }}>
-              Neue Aktion anlegen
-              <br />
-              <small style={{ fontWeight: 300 }}>
-                (im CMS selbst verwalten)
-              </small>
-            </div>
+          <div className="aktion-insta-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+            </svg>
           </div>
-        </div>
+          <h3>Folge uns auf Instagram</h3>
+          <p>
+            Damit du nie wieder eine aktuelle Aktion verpasst – alle Angebote
+            zuerst auf <strong>@esso_badwildungen</strong>.
+          </p>
+          <span className="aktion-insta-link">
+            Jetzt folgen
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </span>
+        </a>
       </div>
     </section>
   );
