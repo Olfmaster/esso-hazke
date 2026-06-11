@@ -12,6 +12,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  /* clip (not hidden) prevents horizontal scroll from off-screen reveal
+     transforms without creating a scroll container — keeps position:sticky
+     working on the desktop FAQ aside. */
+  overflow-x: clip;
 }
 
 :root {
@@ -38,7 +42,7 @@ body {
   font-family: var(--font-sans);
   background: var(--white);
   color: var(--black);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img {
@@ -1688,11 +1692,22 @@ footer a:hover {
     align-items: stretch;
     padding: 24px;
     gap: 4px;
-    transform: translateY(-110%);
-    transition: transform 0.35s var(--ease);
+    /* Fully hide the closed menu. translateY(-110%) alone left the last item
+       (the red CTA) peeking below the top edge, because the menu is anchored
+       at top:var(--nav-h), not 0. visibility + opacity guarantee it's gone. */
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    box-shadow: 0 18px 40px rgba(7, 25, 74, 0.25);
+    transition: transform 0.35s var(--ease), opacity 0.3s var(--ease),
+      visibility 0.35s var(--ease);
   }
   .nav-links--open {
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .nav--scrolled .nav-links {
     background: rgba(255, 255, 255, 0.98);
