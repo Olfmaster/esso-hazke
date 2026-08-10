@@ -96,7 +96,7 @@ export default function Hero() {
       <div className="hero-bg" ref={bgRef}>
         <Image
           src="/Esso_hero.webp"
-          alt="Esso Tankstelle Bad Wildungen"
+          alt="Esso Tankstelle in Battenberg (Eder)"
           fill
           priority
           sizes="100vw"
@@ -107,7 +107,7 @@ export default function Hero() {
 
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-eyebrow">Esso · Bad Wildungen</div>
+          <div className="hero-eyebrow">Esso · Battenberg (Eder)</div>
           <h1 className="hero-headline">
             <span className="word hero-word">
               <span>Ihre</span>
@@ -129,25 +129,28 @@ export default function Hero() {
           </h1>
           <p className="hero-sub">
             Tanken, Einkauf und mehr — direkt in{" "}
-            <strong>Bad Wildungen</strong>. Immer frisch, immer verlässlich.
+            <strong>Battenberg (Eder)</strong>. Immer frisch, immer verlässlich.
           </p>
           <div className="hero-meta">
-            <div className="hero-meta-item">
-              <span className="dot" />
-              <span>Jetzt geöffnet</span>
-            </div>
             <div className="hero-meta-item">
               <svg viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 6v6l4 2" />
               </svg>
-              <span>Mo–So 06:00–24:00</span>
+              <span>Mo–Fr 08:30–16:00</span>
+            </div>
+            <div className="hero-meta-item">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 21h10V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16z" />
+                <path d="M13 10h3a2 2 0 0 1 2 2v5a2 2 0 0 0 3 0V9l-3-3" />
+              </svg>
+              <span>Tanken nur zu den Öffnungszeiten</span>
             </div>
             <div className="hero-meta-item">
               <svg viewBox="0 0 24 24">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.8 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.71 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.08-1.08a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <span>+49 15227164926</span>
+              <span>06452 9291909</span>
             </div>
           </div>
           <div className="hero-cta">

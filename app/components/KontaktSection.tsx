@@ -19,7 +19,7 @@ export default function KontaktSection() {
             className="section-lead gsap-left"
             style={{ marginTop: 16 }}
           >
-            Fragen zu Firmentanken, Aktionen oder einfach mal vorbeischauen –
+            Fragen zu Zahlungsmitteln, Aktionen oder einfach mal vorbeischauen –
             wir freuen uns auf Sie.
           </p>
           <div className="kontakt-details">
@@ -32,7 +32,19 @@ export default function KontaktSection() {
               </div>
               <div className="k-text">
                 <label>Adresse</label>
-                <span>Bad Wildungen</span>
+                <span>35088 Battenberg (Eder)</span>
+              </div>
+            </div>
+            <div className="k-item gsap-left">
+              <div className="k-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <div className="k-text">
+                <label>Öffnungszeiten</label>
+                <span>Mo–Fr 08:30–16:00 Uhr</span>
               </div>
             </div>
             <div className="k-item gsap-left">
@@ -43,7 +55,24 @@ export default function KontaktSection() {
               </div>
               <div className="k-text">
                 <label>Telefon</label>
-                <span>+49 15227164926</span>
+                <span>
+                  <a href="tel:+4964529291909">06452 9291909</a>
+                </span>
+              </div>
+            </div>
+            <div className="k-item gsap-left">
+              <div className="k-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div className="k-text">
+                <label>Im Notfall</label>
+                <span>
+                  <a href="tel:+491741575465">0174 1575465</a>
+                </span>
               </div>
             </div>
             <div className="k-item gsap-left">

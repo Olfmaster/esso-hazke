@@ -14,6 +14,10 @@ export default function InstaSection() {
           <br />
           auf Instagram
         </h2>
+        <p className="section-lead gsap-up">
+          Aktionen, Angebote und Neuigkeiten posten wir zuerst auf Instagram und
+          Facebook.
+        </p>
         <div className="insta-grid">
           {Array.from({ length: 5 }).map((_, i) => (
             <div className="insta-ph gsap-scale" key={i}>
@@ -31,9 +35,24 @@ export default function InstaSection() {
         >
           Instagram-Feed wird nach API-Freischaltung eingebunden
         </p>
-        <a href="#" className="insta-link gsap-fade">
-          @esso_badwildungen auf Instagram folgen →
-        </a>
+        <div className="insta-links">
+          <a
+            href="https://www.instagram.com/tankstelle_35088_valeriyahazke"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="insta-link gsap-fade"
+          >
+            @tankstelle_35088_valeriyahazke auf Instagram folgen →
+          </a>
+          <a
+            href="https://www.facebook.com/share/17LNgw5euc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="insta-link gsap-fade"
+          >
+            Esso-Station Bienhaus auf Facebook →
+          </a>
+        </div>
       </section>
     </div>
   );

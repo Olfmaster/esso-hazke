@@ -451,18 +451,6 @@ button {
   stroke-width: 2;
   stroke-linecap: round;
 }
-.hero-meta-item .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.18);
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.18); }
-  50% { box-shadow: 0 0 0 9px rgba(74, 222, 128, 0.04); }
-}
 .hero-cta {
   display: flex;
   gap: 14px;
@@ -987,7 +975,7 @@ body.lightbox-open {
   font-weight: 600;
 }
 
-/* ── FIRMENTANKEN ── */
+/* ── ZAHLUNGSMITTEL (Layout-Rahmen) ── */
 .firmen-section {
   max-width: 1300px;
   margin: 0 auto;
@@ -1006,52 +994,6 @@ body.lightbox-open {
   object-fit: cover;
   aspect-ratio: 4 / 3;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-}
-.firmen-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-}
-.firmen-item {
-  background: white;
-  padding: 36px 28px;
-  transition: background 0.2s;
-}
-.firmen-item:first-child {
-  border-radius: 8px 0 0 8px;
-}
-.firmen-item:last-child {
-  border-radius: 0 8px 8px 0;
-}
-.firmen-item:hover {
-  background: var(--red);
-}
-.firmen-item:hover .firmen-num,
-.firmen-item:hover h4,
-.firmen-item:hover p {
-  color: white;
-}
-.firmen-num {
-  font-family: var(--font-display);
-  font-size: 52px;
-  font-weight: 900;
-  color: var(--red);
-  line-height: 1;
-  margin-bottom: 12px;
-  transition: color 0.2s;
-}
-.firmen-item h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  transition: color 0.2s;
-}
-.firmen-item p {
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.6;
-  font-weight: 300;
-  transition: color 0.2s;
 }
 
 /* ── ÜBER UNS ── */
@@ -1181,8 +1123,57 @@ body.lightbox-open {
   margin: 0;
 }
 
-/* ── FUTURE ── */
-.future-section {
+/* ── ZAHLUNGSMITTEL ── */
+.zahlung-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.zahlung-card {
+  background: white;
+  padding: 32px 28px;
+  transition: background 0.2s;
+}
+.zahlung-card:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.zahlung-card:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.zahlung-card h4 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+.zahlung-card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.zahlung-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.zahlung-chips li {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--off);
+}
+
+/* ── PARTNER ── */
+.partner-section {
   max-width: 1300px;
   margin: 0 auto;
   padding: 100px 6%;
@@ -1191,28 +1182,27 @@ body.lightbox-open {
   gap: 64px;
   align-items: center;
 }
-.future-section .section-title {
+.partner-section .section-title {
   color: white;
 }
-.future-section .section-lead {
+.partner-section .section-lead {
   color: rgba(255, 255, 255, 0.4);
 }
-.future-cards {
+.partner-cards {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.future-card {
+.partner-card {
   display: flex;
-  align-items: center;
   gap: 16px;
-  padding: 20px 24px;
+  padding: 22px 24px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 6px;
   transition: background 0.2s, border-color 0.2s;
 }
-.future-card:hover {
+.partner-card:hover {
   background: rgba(211, 31, 43, 0.08);
   border-color: rgba(211, 31, 43, 0.25);
 }
@@ -1222,24 +1212,55 @@ body.lightbox-open {
   border-radius: 50%;
   background: var(--red);
   flex-shrink: 0;
+  margin-top: 7px;
   box-shadow: 0 0 8px rgba(211, 31, 43, 0.6);
 }
-.future-dot.yellow {
-  background: #f5c500;
-  box-shadow: 0 0 8px rgba(245, 197, 0, 0.6);
-}
-.future-card strong {
+.partner-body strong {
   display: block;
   font-size: 15px;
   font-weight: 600;
   color: white;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
-.future-card span {
+.partner-body p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.5);
+}
+.partner-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.partner-list li {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.partner-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 12px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.partner-contact a {
+  color: var(--red);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.partner-contact a:hover {
+  color: white;
 }
 
 /* ── FAQ ── */
@@ -1649,6 +1670,12 @@ textarea.form-input {
   transform: scale(1.04);
   opacity: 0.8;
 }
+.insta-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 32px;
+}
 .insta-link {
   display: inline-flex;
   align-items: center;
@@ -1792,7 +1819,7 @@ footer a:hover {
   }
   .baecker-section,
   .kontakt-section,
-  .future-section,
+  .partner-section,
   .firmen-intro {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1803,13 +1830,13 @@ footer a:hover {
   .faq-aside {
     position: static;
   }
-  .firmen-grid {
+  .zahlung-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .firmen-item:first-child {
+  .zahlung-card:first-child {
     border-radius: 8px 0 0 0;
   }
-  .firmen-item:last-child {
+  .zahlung-card:last-child {
     border-radius: 0 0 8px 0;
   }
   /* 3-col rectangle at tablet: 10 tiles → 6 rows ×3 = 18 cells, pad with 2 cells from larger tiles */
@@ -1831,12 +1858,12 @@ footer a:hover {
   .reviews-grid {
     grid-template-columns: 1fr;
   }
-  .firmen-grid,
+  .zahlung-grid,
   .stats-section {
     grid-template-columns: 1fr;
   }
-  .firmen-item:first-child,
-  .firmen-item:last-child {
+  .zahlung-card:first-child,
+  .zahlung-card:last-child {
     border-radius: 0;
   }
   .insta-grid {

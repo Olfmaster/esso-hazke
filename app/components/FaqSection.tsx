@@ -7,12 +7,22 @@ type FaqItem = { q: string; a: React.ReactNode };
 
 const items: FaqItem[] = [
   {
-    q: "Kann ich als Firma auf Rechnung tanken?",
+    q: "Kann ich rund um die Uhr tanken?",
     a: (
       <>
-        Ja – sowohl Privatpersonen als auch Unternehmen können bei uns auf
-        Rechnung tanken. Die Abrechnung erfolgt <strong>monatlich</strong>,
-        übersichtlich und ohne versteckte Gebühren.
+        Nein. Die Zapfsäulen sind <strong>nur während unserer
+        Öffnungszeiten</strong> in Betrieb – aktuell Mo–Fr von 08:30 bis 16:00
+        Uhr. Einen Nachttank-Automaten gibt es nicht.
+      </>
+    ),
+  },
+  {
+    q: "Welche Karten und Zahlungsmittel werden akzeptiert?",
+    a: (
+      <>
+        Flottenkarten (<strong>Esso Card, Shell, DKV, UTA</strong>), Visa und
+        American Express sowie Google Pay. Über die <strong>Esso App</strong>{" "}
+        können Sie außerdem direkt mit dem Handy an der Zapfsäule bezahlen.
       </>
     ),
   },
@@ -20,9 +30,21 @@ const items: FaqItem[] = [
     q: "Gibt es sonntags frische Brötchen?",
     a: (
       <>
-        Ja! In Kooperation mit unserem lokalen Bäcker bieten wir{" "}
-        <strong>sonntags frische Brötchen</strong> an. An Feiertagen kann die
+        Ja! In Kooperation mit der <strong>Bäckerei Eckhardt aus Hatzfeld</strong>{" "}
+        bieten wir sonntags frische Brötchen an. An Feiertagen kann die
         Lieferung abweichen – aktuelle Infos immer hier auf der Website.
+      </>
+    ),
+  },
+  {
+    q: "Gibt es eine Waschanlage, Mietwagen oder eine Werkstatt?",
+    a: (
+      <>
+        Ja, über unsere Partner vor Ort: Waschanlage und{" "}
+        <strong>Waschboxen zur Selbstbedienung</strong> sowie Mietwagen
+        (9-Sitzer, Transporter für Umzüge, Wohnmobil) über Michael Bienhaus,
+        Tel. 0152 36107109. Für Reparatur und Wartung: Autoservice Biermann,
+        Battenfelder Str. 6, Tel. 06452 9393773.
       </>
     ),
   },
@@ -30,9 +52,10 @@ const items: FaqItem[] = [
     q: "Wie sind die Öffnungszeiten an Feiertagen?",
     a: (
       <>
-        Die Öffnungszeiten an Feiertagen werden vom Inhaber individuell
-        angepasst und <strong>rechtzeitig hier angekündigt</strong>. Die
-        Zapfsäulen sind grundsätzlich rund um die Uhr verfügbar.
+        Die Öffnungszeiten an Feiertagen werden von der Inhaberin individuell
+        angepasst und <strong>rechtzeitig hier angekündigt</strong>. Da die
+        Zapfsäulen nur während der Öffnungszeiten laufen, gilt das auch fürs
+        Tanken.
       </>
     ),
   },
@@ -41,8 +64,8 @@ const items: FaqItem[] = [
     a: (
       <>
         Aktuelle Stellenangebote finden Sie hier auf der Website. Bewerbungen
-        per <strong>Online-Formular mit Datei-Upload</strong> – direkt an den
-        Inhaber.
+        per <strong>Online-Formular mit Datei-Upload</strong> – direkt an die
+        Inhaberin.
       </>
     ),
   },
@@ -100,23 +123,28 @@ export default function FaqSection() {
               für Sie da sind
             </h3>
             <p>
-              Die Zapfsäulen sind rund um die Uhr verfügbar.
-              Shopöffnungszeiten:
+              Getankt werden kann ausschließlich während der Öffnungszeiten –
+              die Zapfsäulen laufen nicht rund um die Uhr.
             </p>
             <div className="faq-oz">
               <div className="faq-oz-row">
-                <span className="faq-oz-day">Montag – Sonntag</span>
-                <span className="faq-oz-time green">06:00 – 24:00 Uhr</span>
+                <span className="faq-oz-day">Montag – Freitag</span>
+                <span className="faq-oz-time green">08:30 – 16:00 Uhr</span>
               </div>
               <div className="faq-oz-row">
-                <span className="faq-oz-day">Tanken (Zapfsäulen)</span>
-                <span className="faq-oz-time green">24/7</span>
+                <span className="faq-oz-day">Samstag & Sonntag</span>
+                <span className="faq-oz-time yellow">Angabe folgt</span>
               </div>
               <div className="faq-oz-row">
                 <span className="faq-oz-day">Feiertage</span>
                 <span className="faq-oz-time yellow">Siehe Ankündigungen</span>
               </div>
             </div>
+            <p style={{ marginTop: 16 }}>
+              Telefonisch erreichbar: <strong>06452 9291909</strong>
+              <br />
+              Im Notfall: <strong>0174 1575465</strong>
+            </p>
           </div>
         </div>
       </section>

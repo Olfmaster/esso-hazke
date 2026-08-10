@@ -21,15 +21,15 @@ export default function UeberSection() {
             <circle cx="12" cy="7" r="4" />
           </svg>
           <span>
-            Foto des Inhabers
+            Foto der Inhaberin
             <br />
             kommt hier hin
           </span>
         </div>
         <div className="ueber-photo-accent gsap-scale" />
         <div className="ueber-photo-tag gsap-up">
-          Inhaber seit Januar 2026
-          <small>Esso Tankstelle Bad Wildungen</small>
+          Inhaberin seit Januar 2026
+          <small>Esso Tankstelle Battenberg (Eder)</small>
         </div>
       </div>
       <div className="ueber-content">
@@ -41,8 +41,8 @@ export default function UeberSection() {
         </h2>
         <p className="gsap-right" style={{ marginTop: 24 }}>
           Seit <strong>Januar 2026</strong> führe ich diese Esso Tankstelle mit
-          vollem Einsatz. Als Existenzgründer habe ich mir vorgenommen, dass Ihr
-          Tankstopp hier immer angenehm, schnell und verlässlich ist.
+          vollem Einsatz. Als Existenzgründerin habe ich mir vorgenommen, dass
+          Ihr Tankstopp hier immer angenehm, schnell und verlässlich ist.
         </p>
         <p className="gsap-right">
           Ich bin persönlich vor Ort – mit offenem Ohr für Ihre Wünsche. Diese
@@ -84,7 +84,10 @@ export default function UeberSection() {
             </div>
             <div>
               <h4>Lokal verwurzelt</h4>
-              <p>Kooperation mit dem Bäcker aus dem Nachbardorf.</p>
+              <p>
+                Kooperationen mit der Bäckerei Eckhardt, dem Autoservice
+                Biermann und der Waschanlage vor Ort.
+              </p>
             </div>
           </div>
         </div>

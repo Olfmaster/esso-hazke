@@ -57,7 +57,7 @@ export default function BaeckerSection() {
           <div ref={imgRef} style={{ width: "100%", height: "110%" }}>
             <Image
               src="/backware.webp"
-              alt="Frische Brötchen vom Bäcker"
+              alt="Frische Brötchen von der Bäckerei Eckhardt aus Hatzfeld"
               width={800}
               height={600}
               style={{
@@ -77,8 +77,9 @@ export default function BaeckerSection() {
             jeden Sonntag
           </h2>
           <p className="section-lead" style={{ marginTop: 16 }}>
-            In Kooperation mit unserem lokalen Bäcker aus dem Nachbardorf gibt
-            es bei uns frische Brötchen – genau dann, wenn Sie sie brauchen.
+            In Kooperation mit der <strong>Bäckerei Eckhardt aus Hatzfeld</strong>{" "}
+            gibt es bei uns frische Brötchen – genau dann, wenn Sie sie
+            brauchen.
           </p>
           <div className="baecker-note">
             <strong>Hinweis:</strong> An Feiertagen kann die Lieferung

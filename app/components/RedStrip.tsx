@@ -16,8 +16,8 @@ export default function RedStrip() {
             </svg>
           </div>
           <div className="strip-text">
-            Mo–So 06:00–24:00
-            <small>Shop-Öffnungszeiten</small>
+            Mo–Fr 08:30–16:00
+            <small>Tanken nur zu den Öffnungszeiten</small>
           </div>
         </div>
         <div className="strip-item gsap-up">
@@ -28,7 +28,7 @@ export default function RedStrip() {
           </div>
           <div className="strip-text">
             Frische Brötchen
-            <small>Jeden Sonntag vom Bäcker</small>
+            <small>Sonntags von der Bäckerei Eckhardt</small>
           </div>
         </div>
         <div className="strip-item gsap-up">
@@ -39,8 +39,8 @@ export default function RedStrip() {
             </svg>
           </div>
           <div className="strip-text">
-            Firmentanken
-            <small>Monatliche Abrechnung</small>
+            Karte, Handy & Flottenkarte
+            <small>Esso Card, DKV, UTA, Shell u. a.</small>
           </div>
         </div>
         <div className="strip-item gsap-up">
@@ -50,8 +50,8 @@ export default function RedStrip() {
             </svg>
           </div>
           <div className="strip-text">
-            +49 15227164926
-            <small>Direkt erreichbar</small>
+            06452 9291909
+            <small>Mo–Fr 08:30–16:00 erreichbar</small>
           </div>
         </div>
       </div>

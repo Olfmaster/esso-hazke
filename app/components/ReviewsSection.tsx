@@ -2,6 +2,9 @@
 
 import { useScrollReveal } from "./lib/useGsap";
 
+// ACHTUNG – PLATZHALTER: Diese Stimmen sind erfunden und dürfen NICHT live
+// gehen. Vor dem Livegang durch echte Kundenbewertungen ersetzen (z. B. aus
+// Google Business) oder die Sektion aus page.tsx entfernen.
 const reviews = [
   {
     text: "Seit der Übernahme hat sich hier wirklich was getan. Immer sauber, freundlich und die Preise stimmen. Ich tanke nur noch hier.",
@@ -9,14 +12,14 @@ const reviews = [
     role: "Stammkundin",
   },
   {
-    text: "Sonntags die frischen Brötchen vom Bäcker holen und gleichzeitig tanken – das ist einfach praktisch. Toller Service!",
+    text: "Sonntags die frischen Brötchen holen und gleichzeitig tanken – das ist einfach praktisch. Toller Service!",
     name: "Markus Schreiber",
     role: "Stammkunde",
   },
   {
-    text: "Als Firmenfahrer schätze ich die Möglichkeit zum Rechnungskauf sehr. Unkompliziert, zuverlässig und immer ein offenes Ohr.",
+    text: "Tanken, Waschbox und Werkstatt an einem Ort – für mich als Vielfahrer genau richtig. Immer ein offenes Ohr.",
     name: "Stefan Brandt",
-    role: "Fuhrparkleiter",
+    role: "Stammkunde",
   },
 ];
 
@@ -29,7 +32,7 @@ export default function ReviewsSection() {
       <h2 className="section-title gsap-up">
         Stimmen aus
         <br />
-        Bad Wildungen
+        Battenberg
       </h2>
       <div className="reviews-grid">
         {reviews.map((r, i) => (

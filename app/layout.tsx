@@ -22,24 +22,26 @@ const SITE_URL = "https://esso-hazke.de";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Esso Tankstelle Bad Wildungen – Tanken, Shop & frische Brötchen",
-    template: "%s | Esso Bad Wildungen",
+    default:
+      "Esso Tankstelle Battenberg (Eder) – Tanken, Shop & frische Brötchen",
+    template: "%s | Esso Battenberg",
   },
   description:
-    "Ihre Esso Tankstelle in Bad Wildungen. Shop Mo–So 06:00–24:00 Uhr, Zapfsäulen 24/7. Firmentanken mit monatlicher Abrechnung, frische Sonntagsbrötchen vom lokalen Bäcker.",
+    "Ihre Esso Tankstelle in 35088 Battenberg (Eder). Geöffnet Mo–Fr 08:30–16:00 Uhr, Tanken nur zu den Öffnungszeiten. Frische Sonntagsbrötchen von der Bäckerei Eckhardt, Waschanlage, Mietwagen und Werkstatt über unsere Partner.",
   keywords: [
-    "Esso Tankstelle Bad Wildungen",
-    "Tanken Bad Wildungen",
-    "Firmentanken Bad Wildungen",
-    "Tankstelle auf Rechnung",
-    "Brötchen Sonntag Bad Wildungen",
+    "Esso Tankstelle Battenberg",
+    "Tanken Battenberg Eder",
+    "Tankstelle 35088",
+    "Brötchen Sonntag Battenberg",
+    "Waschanlage Battenberg",
+    "Mietwagen Battenberg",
     "Diesel Super E10 E5",
-    "Tankstelle Shop",
+    "Esso Card DKV UTA",
     "Esso Hazke",
   ],
-  authors: [{ name: "Esso Tankstelle Bad Wildungen" }],
-  creator: "Esso Tankstelle Bad Wildungen",
-  publisher: "Esso Tankstelle Bad Wildungen",
+  authors: [{ name: "Esso Tankstelle Battenberg (Eder)" }],
+  creator: "Esso Tankstelle Battenberg (Eder)",
+  publisher: "Esso Tankstelle Battenberg (Eder)",
   category: "Tankstelle",
   alternates: {
     canonical: "/",
@@ -48,24 +50,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     url: SITE_URL,
-    siteName: "Esso Tankstelle Bad Wildungen",
-    title: "Esso Tankstelle Bad Wildungen – Tanken, Shop & frische Brötchen",
+    siteName: "Esso Tankstelle Battenberg (Eder)",
+    title:
+      "Esso Tankstelle Battenberg (Eder) – Tanken, Shop & frische Brötchen",
     description:
-      "Tanken, Shop, Firmentanken und frische Sonntagsbrötchen – Ihre Esso Tankstelle im Herzen von Bad Wildungen. Shop Mo–So 06:00–24:00, Zapfsäulen 24/7.",
+      "Tanken, Shop und frische Sonntagsbrötchen – Ihre Esso Tankstelle in Battenberg (Eder). Geöffnet Mo–Fr 08:30–16:00 Uhr.",
     images: [
       {
         url: "/Esso_hero.webp",
         width: 1200,
         height: 675,
-        alt: "Esso Tankstelle in Bad Wildungen",
+        alt: "Esso Tankstelle in Battenberg (Eder)",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Esso Tankstelle Bad Wildungen",
+    title: "Esso Tankstelle Battenberg (Eder)",
     description:
-      "Tanken, Shop, Firmentanken und frische Sonntagsbrötchen in Bad Wildungen.",
+      "Tanken, Shop und frische Sonntagsbrötchen in Battenberg (Eder).",
     images: ["/Esso_hero.webp"],
   },
   robots: {
@@ -96,41 +99,35 @@ const businessJsonLd = {
   "@context": "https://schema.org",
   "@type": "GasStation",
   "@id": `${SITE_URL}/#business`,
-  name: "Esso Tankstelle Bad Wildungen",
+  name: "Esso Tankstelle Battenberg (Eder)",
   alternateName: "Esso Hazke",
   description:
-    "Esso Tankstelle in Bad Wildungen mit Shop, Firmentanken auf Rechnung und frischen Sonntagsbrötchen vom lokalen Bäcker.",
+    "Esso Tankstelle in Battenberg (Eder) mit Shop und frischen Sonntagsbrötchen von der Bäckerei Eckhardt. Waschanlage, Waschboxen, Mietwagen und Werkstatt über Partner vor Ort.",
   url: SITE_URL,
-  telephone: "+49-15227164926",
+  telephone: "+49-6452-9291909",
   email: "info@esso-hazke.de",
   image: `${SITE_URL}/Esso_hero.webp`,
   logo: `${SITE_URL}/Esso_logo.png`,
   priceRange: "€€",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Bad Wildungen",
+    postalCode: "35088",
+    addressLocality: "Battenberg (Eder)",
     addressRegion: "Hessen",
     addressCountry: "DE",
   },
   areaServed: {
     "@type": "City",
-    name: "Bad Wildungen",
+    name: "Battenberg (Eder)",
   },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "06:00",
-      closes: "24:00",
-      description: "Shop-Öffnungszeiten – Zapfsäulen 24/7 verfügbar",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "16:00",
+      description:
+        "Öffnungszeiten – die Zapfsäulen sind ausschließlich während dieser Zeiten in Betrieb",
     },
   ],
   amenityFeature: [
@@ -151,18 +148,32 @@ const businessJsonLd = {
     },
     {
       "@type": "LocationFeatureSpecification",
-      name: "Firmentanken auf Rechnung",
+      name: "Frische Brötchen (Sonntag)",
       value: true,
     },
     {
       "@type": "LocationFeatureSpecification",
-      name: "Frische Brötchen (Sonntag)",
+      name: "Waschanlage & SB-Waschboxen (Partner)",
+      value: true,
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Mietwagen (Partner)",
+      value: true,
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Werkstatt (Partner)",
       value: true,
     },
   ],
-  paymentAccepted: "Bar, EC-Karte, Kreditkarte, Rechnung (Firmenkunden)",
+  paymentAccepted:
+    "Esso Card, Shell, DKV, UTA, Visa, American Express, Google Pay, Esso App",
   currenciesAccepted: "EUR",
-  sameAs: ["https://www.instagram.com/esso_badwildungen"],
+  sameAs: [
+    "https://www.instagram.com/tankstelle_35088_valeriyahazke",
+    "https://www.facebook.com/share/17LNgw5euc/",
+  ],
 };
 
 const faqJsonLd = {
@@ -171,10 +182,18 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Kann ich als Firma auf Rechnung tanken?",
+      name: "Kann ich rund um die Uhr tanken?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja – sowohl Privatpersonen als auch Unternehmen können bei der Esso Tankstelle Bad Wildungen auf Rechnung tanken. Die Abrechnung erfolgt monatlich, übersichtlich und ohne versteckte Gebühren.",
+        text: "Nein. Die Zapfsäulen der Esso Tankstelle Battenberg (Eder) sind nur während der Öffnungszeiten in Betrieb – aktuell Montag bis Freitag von 08:30 bis 16:00 Uhr. Einen Nachttank-Automaten gibt es nicht.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Welche Karten und Zahlungsmittel werden akzeptiert?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Akzeptiert werden die Flottenkarten Esso Card, Shell, DKV und UTA, die Kreditkarten Visa und American Express sowie Google Pay. Über die Esso App kann außerdem direkt mit dem Handy an der Zapfsäule bezahlt werden.",
       },
     },
     {
@@ -182,7 +201,15 @@ const faqJsonLd = {
       name: "Gibt es sonntags frische Brötchen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja. In Kooperation mit einem lokalen Bäcker aus dem Nachbardorf bietet die Esso Tankstelle Bad Wildungen sonntags frische Brötchen an. An Feiertagen kann die Lieferung abweichen.",
+        text: "Ja. In Kooperation mit der Bäckerei Eckhardt aus Hatzfeld bietet die Esso Tankstelle Battenberg (Eder) sonntags frische Brötchen an. An Feiertagen kann die Lieferung abweichen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Gibt es eine Waschanlage, Mietwagen oder eine Werkstatt?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, über Partner vor Ort. Waschanlage und Waschboxen zur Selbstbedienung sowie Mietwagen (9-Sitzer, Transporter für Umzüge, Wohnmobil) über Michael Bienhaus, Telefon 0152 36107109. Für Reparatur und Wartung: Autoservice Biermann, Battenfelder Str. 6, Telefon 06452 9393773.",
       },
     },
     {
@@ -190,7 +217,7 @@ const faqJsonLd = {
       name: "Wie sind die Öffnungszeiten an Feiertagen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Die Öffnungszeiten an Feiertagen werden vom Inhaber individuell angepasst und rechtzeitig auf der Website angekündigt. Die Zapfsäulen sind grundsätzlich rund um die Uhr (24/7) verfügbar.",
+        text: "Die Öffnungszeiten an Feiertagen werden von der Inhaberin individuell angepasst und rechtzeitig auf der Website angekündigt. Da die Zapfsäulen nur während der Öffnungszeiten laufen, gilt das auch fürs Tanken.",
       },
     },
     {
@@ -198,7 +225,7 @@ const faqJsonLd = {
       name: "Werden offene Stellen ausgeschrieben?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Aktuelle Stellenangebote werden auf der Website veröffentlicht. Bewerbungen sind per Online-Formular mit Datei-Upload möglich und gehen direkt an den Inhaber.",
+        text: "Aktuelle Stellenangebote werden auf der Website veröffentlicht. Bewerbungen sind per Online-Formular mit Datei-Upload möglich und gehen direkt an die Inhaberin.",
       },
     },
   ],
@@ -208,15 +235,21 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
-  name: "Esso Tankstelle Bad Wildungen",
+  name: "Esso Tankstelle Battenberg (Eder)",
   url: SITE_URL,
   logo: `${SITE_URL}/Esso_logo.png`,
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+49-15227164926",
+    telephone: "+49-6452-9291909",
     contactType: "customer service",
     areaServed: "DE",
     availableLanguage: ["German", "English"],
+    hoursAvailable: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "16:00",
+    },
   },
 };
 

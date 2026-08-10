@@ -4,9 +4,9 @@ import RedStrip from "./components/RedStrip";
 import AktionenSection from "./components/AktionenSection";
 import GallerySection from "./components/GallerySection";
 import BaeckerSection from "./components/BaeckerSection";
-import FirmenSection from "./components/FirmenSection";
+import PartnerSection from "./components/PartnerSection";
+import ZahlungSection from "./components/ZahlungSection";
 import UeberSection from "./components/UeberSection";
-import FutureSection from "./components/FutureSection";
 import FaqSection from "./components/FaqSection";
 import StatsSection from "./components/StatsSection";
 import ReviewsSection from "./components/ReviewsSection";
@@ -24,9 +24,9 @@ export default function Home() {
         <AktionenSection />
         <GallerySection />
         <BaeckerSection />
-        <FirmenSection />
+        <PartnerSection />
+        <ZahlungSection />
         <UeberSection />
-        <FutureSection />
         <FaqSection />
         <StatsSection />
         <ReviewsSection />

@@ -35,15 +35,15 @@ export default function AktionenSection() {
             <span className="aktion-date">Jeden Sonntag</span>
           </div>
           <div className="aktion-body">
-            <h3>Frische Brötchen vom Bäcker</h3>
+            <h3>Frische Brötchen von der Bäckerei Eckhardt</h3>
             <p>
-              In Kooperation mit unserem lokalen Bäcker – genau dann, wenn Sie
-              sie brauchen.
+              In Kooperation mit der Bäckerei Eckhardt aus Hatzfeld – genau
+              dann, wenn Sie sie brauchen.
             </p>
           </div>
         </div>
         <a
-          href="https://www.instagram.com/esso_badwildungen"
+          href="https://www.instagram.com/tankstelle_35088_valeriyahazke"
           target="_blank"
           rel="noopener noreferrer"
           className="aktion-card aktion-card--insta gsap-up"
@@ -58,7 +58,7 @@ export default function AktionenSection() {
           <h3>Folge uns auf Instagram</h3>
           <p>
             Damit du nie wieder eine aktuelle Aktion verpasst – alle Angebote
-            zuerst auf <strong>@esso_badwildungen</strong>.
+            zuerst auf <strong>@tankstelle_35088_valeriyahazke</strong>.
           </p>
           <span className="aktion-insta-link">
             Jetzt folgen

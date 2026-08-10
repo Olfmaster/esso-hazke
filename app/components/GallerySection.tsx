@@ -30,10 +30,10 @@ const items: LightboxItem[] = [
     caption: "Schnelle Abwicklung",
   },
   { kind: "placeholder", label: "Snacks & Getränke", tint: "var(--blue)" },
-  { kind: "placeholder", label: "Inhaber", tint: "var(--red-dark)" },
+  { kind: "placeholder", label: "Inhaberin", tint: "var(--red-dark)" },
   { kind: "placeholder", label: "Team", tint: "var(--red)" },
-  { kind: "placeholder", label: "Bad Wildungen", tint: "var(--dark)" },
-  { kind: "placeholder", label: "Firmenkunden", tint: "var(--blue-deep)" },
+  { kind: "placeholder", label: "Waschanlage & Waschboxen", tint: "var(--dark)" },
+  { kind: "placeholder", label: "Mietwagen", tint: "var(--blue-deep)" },
 ];
 
 export default function GallerySection() {
@@ -80,7 +80,7 @@ export default function GallerySection() {
           bis zum Brötchen
         </h2>
         <p className="section-lead gsap-up">
-          Impressionen aus dem Alltag unserer Tankstelle in Bad Wildungen.
+          Impressionen aus dem Alltag unserer Tankstelle in Battenberg (Eder).
         </p>
         <div className="gallery-grid">
           {items.map((it, i) => (

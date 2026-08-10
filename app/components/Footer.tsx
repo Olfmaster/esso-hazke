@@ -2,7 +2,9 @@ export default function Footer() {
   return (
     <div className="footer-outer">
       <footer>
-        <div>© {new Date().getFullYear()} Esso Tankstelle Bad Wildungen</div>
+        <div>
+          © {new Date().getFullYear()} Esso Tankstelle Battenberg (Eder)
+        </div>
         <div style={{ display: "flex", gap: 24 }}>
           <a href="#">Impressum</a>
           <a href="#">Datenschutz</a>
