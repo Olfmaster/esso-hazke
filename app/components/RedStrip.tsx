@@ -16,7 +16,7 @@ export default function RedStrip() {
             </svg>
           </div>
           <div className="strip-text">
-            Mo–Fr 08:30–16:00
+            7 Tage die Woche
             <small>Tanken nur zu den Öffnungszeiten</small>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function RedStrip() {
           </div>
           <div className="strip-text">
             06452 9291909
-            <small>Mo–Fr 08:30–16:00 erreichbar</small>
+            <small>Telefonisch Mo–Fr 08:30–16:00</small>
           </div>
         </div>
       </div>

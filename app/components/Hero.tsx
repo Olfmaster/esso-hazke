@@ -137,7 +137,7 @@ export default function Hero() {
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 6v6l4 2" />
               </svg>
-              <span>Mo–Fr 08:30–16:00</span>
+              <span>7 Tage die Woche geöffnet</span>
             </div>
             <div className="hero-meta-item">
               <svg viewBox="0 0 24 24">

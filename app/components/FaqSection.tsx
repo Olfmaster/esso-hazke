@@ -10,9 +10,9 @@ const items: FaqItem[] = [
     q: "Kann ich rund um die Uhr tanken?",
     a: (
       <>
-        Nein. Die Zapfsäulen sind <strong>nur während unserer
-        Öffnungszeiten</strong> in Betrieb – aktuell Mo–Fr von 08:30 bis 16:00
-        Uhr. Einen Nachttank-Automaten gibt es nicht.
+        Nein. Die Station hat <strong>sieben Tage die Woche</strong> geöffnet,
+        die Zapfsäulen sind aber <strong>nur während der Öffnungszeiten</strong>{" "}
+        in Betrieb. Einen Nachttank-Automaten gibt es nicht.
       </>
     ),
   },
@@ -52,10 +52,10 @@ const items: FaqItem[] = [
     q: "Wie sind die Öffnungszeiten an Feiertagen?",
     a: (
       <>
-        Die Öffnungszeiten an Feiertagen werden von der Inhaberin individuell
-        angepasst und <strong>rechtzeitig hier angekündigt</strong>. Da die
-        Zapfsäulen nur während der Öffnungszeiten laufen, gilt das auch fürs
-        Tanken.
+        An hessischen Feiertagen gelten abweichende Zeiten – besonders um
+        Weihnachten und Neujahr. Wir blenden sie{" "}
+        <strong>rechtzeitig auf der Startseite ein</strong>. Da die Zapfsäulen
+        nur während der Öffnungszeiten laufen, gilt das auch fürs Tanken.
       </>
     ),
   },
@@ -123,25 +123,33 @@ export default function FaqSection() {
               für Sie da sind
             </h3>
             <p>
-              Getankt werden kann ausschließlich während der Öffnungszeiten –
-              die Zapfsäulen laufen nicht rund um die Uhr.
+              Die Station hat sieben Tage die Woche geöffnet. Getankt werden
+              kann ausschließlich während dieser Zeiten – die Zapfsäulen laufen
+              nicht rund um die Uhr.
             </p>
             <div className="faq-oz">
               <div className="faq-oz-row">
-                <span className="faq-oz-day">Montag – Freitag</span>
-                <span className="faq-oz-time green">08:30 – 16:00 Uhr</span>
-              </div>
-              <div className="faq-oz-row">
-                <span className="faq-oz-day">Samstag & Sonntag</span>
-                <span className="faq-oz-time yellow">Angabe folgt</span>
+                <span className="faq-oz-day">Station, Mo – So</span>
+                {/* TODO: exakte Zeiten von Herrn Hazke, kommen per WhatsApp. */}
+                <span className="faq-oz-time yellow">Zeiten folgen</span>
               </div>
               <div className="faq-oz-row">
                 <span className="faq-oz-day">Feiertage</span>
-                <span className="faq-oz-time yellow">Siehe Ankündigungen</span>
+                <span className="faq-oz-time yellow">Abweichend</span>
               </div>
             </div>
             <p style={{ marginTop: 16 }}>
-              Telefonisch erreichbar: <strong>06452 9291909</strong>
+              An Feiertagen gelten abweichende Zeiten – wir blenden sie
+              rechtzeitig auf der Startseite ein.
+            </p>
+            <div className="faq-oz" style={{ marginTop: 16 }}>
+              <div className="faq-oz-row">
+                <span className="faq-oz-day">Telefonisch, Mo – Fr</span>
+                <span className="faq-oz-time green">08:30 – 16:00 Uhr</span>
+              </div>
+            </div>
+            <p style={{ marginTop: 16 }}>
+              Telefon: <strong>06452 9291909</strong>
               <br />
               Im Notfall: <strong>0174 1575465</strong>
             </p>

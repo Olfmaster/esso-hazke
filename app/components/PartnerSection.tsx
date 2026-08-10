@@ -53,8 +53,13 @@ export default function PartnerSection() {
           </h2>
           <p className="section-lead gsap-left" style={{ marginTop: 16 }}>
             Waschen, mieten, reparieren – gemeinsam mit unseren Partnern decken
-            wir alles rund ums Fahrzeug ab. Bitte wenden Sie sich für diese
-            Angebote direkt an den jeweiligen Ansprechpartner.
+            wir alles rund ums Fahrzeug ab.
+          </p>
+          <p className="partner-hinweis gsap-left">
+            Diese Angebote werden von selbstständigen Partnerbetrieben erbracht.
+            Wir stellen sie hier nur informativ vor – Buchung, Reservierung und
+            Abwicklung laufen ausschließlich direkt über den jeweiligen
+            Ansprechpartner. Für deren Leistungen übernehmen wir keine Haftung.
           </p>
         </div>
         <div className="partner-cards">

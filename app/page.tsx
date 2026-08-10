@@ -13,6 +13,7 @@ import ReviewsSection from "./components/ReviewsSection";
 import InstaSection from "./components/InstaSection";
 import KontaktSection from "./components/KontaktSection";
 import Footer from "./components/Footer";
+import Popup from "./components/Popup";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
         <KontaktSection />
       </main>
       <Footer />
+      <Popup />
     </>
   );
 }

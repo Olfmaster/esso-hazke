@@ -44,7 +44,7 @@ export default function KontaktSection() {
               </div>
               <div className="k-text">
                 <label>Öffnungszeiten</label>
-                <span>Mo–Fr 08:30–16:00 Uhr</span>
+                <span>7 Tage die Woche geöffnet</span>
               </div>
             </div>
             <div className="k-item gsap-left">
@@ -54,7 +54,7 @@ export default function KontaktSection() {
                 </svg>
               </div>
               <div className="k-text">
-                <label>Telefon</label>
+                <label>Telefon · Mo–Fr 08:30–16:00</label>
                 <span>
                   <a href="tel:+4964529291909">06452 9291909</a>
                 </span>

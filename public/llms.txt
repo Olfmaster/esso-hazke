@@ -16,10 +16,10 @@
 
 ## Öffnungszeiten
 
-- **Montag – Freitag:** 08:30 – 16:00 Uhr
+- **Station:** sieben Tage die Woche geöffnet (die exakten Uhrzeiten werden derzeit noch ergänzt)
 - **Zapfsäulen:** ausschließlich während der Öffnungszeiten in Betrieb – es gibt **kein** 24/7-Tanken und keinen Nachttank-Automaten
-- **Feiertage:** Individuell, werden rechtzeitig auf der Website angekündigt
-- **Telefonische Erreichbarkeit:** Mo–Fr 08:30–16:00 Uhr unter 06452 9291909
+- **Feiertage:** An hessischen Feiertagen gelten abweichende Zeiten, besonders um Weihnachten und Neujahr. Sie werden rechtzeitig auf der Startseite eingeblendet.
+- **Telefonische Erreichbarkeit:** Mo–Fr 08:30–16:00 Uhr unter 06452 9291909 (das sind **nicht** die Öffnungszeiten der Station)
 
 ## Kraftstoffe
 
@@ -44,6 +44,8 @@ In Kooperation mit der Bäckerei Eckhardt aus Hatzfeld gibt es sonntags frische 
 - **Mietwagen:** 9-Sitzer für Personentransport, Transporter für Umzüge, Wohnmobil. Ansprechpartner: Michael Bienhaus, Tel. 0152 36107109.
 - **Werkstatt:** Autoservice Biermann, Battenfelder Str. 6. Ansprechpartner: Frank Biermann, Tel. 06452 9393773.
 
+Diese Angebote werden von selbstständigen Partnerbetrieben erbracht und hier nur informativ vorgestellt. Buchung und Abwicklung laufen ausschließlich direkt über den jeweiligen Ansprechpartner.
+
 ## Shop-Angebot
 
 Snacks, Getränke, Tabakwaren und Alltagsbedarf während der Öffnungszeiten.
@@ -51,7 +53,7 @@ Snacks, Getränke, Tabakwaren und Alltagsbedarf während der Öffnungszeiten.
 ## FAQ-Quintessenzen
 
 **Kann man rund um die Uhr tanken?**
-Nein. Die Zapfsäulen laufen nur während der Öffnungszeiten (Mo–Fr 08:30–16:00 Uhr).
+Nein. Die Station ist sieben Tage die Woche geöffnet, die Zapfsäulen laufen aber nur während der Öffnungszeiten.
 
 **Welche Zahlungsmittel werden akzeptiert?**
 Esso Card, Shell, DKV, UTA, Visa, American Express, Google Pay sowie Bezahlen per Handy an der Zapfsäule über die Esso App.
@@ -63,7 +65,7 @@ Ja, in Kooperation mit der Bäckerei Eckhardt aus Hatzfeld. An Feiertagen kann d
 Ja, über Partner vor Ort – Waschanlage/Waschboxen und Mietwagen über Michael Bienhaus (0152 36107109), Werkstatt über Autoservice Biermann (06452 9393773).
 
 **Sind die Öffnungszeiten an Feiertagen anders?**
-Ja – Feiertagszeiten werden von der Inhaberin angepasst und auf der Website angekündigt. Tanken ist auch dann nur während der Öffnungszeiten möglich.
+Ja – an hessischen Feiertagen gelten abweichende Zeiten, besonders um Weihnachten und Neujahr. Sie werden rechtzeitig auf der Startseite eingeblendet. Tanken ist auch dann nur während der Öffnungszeiten möglich.
 
 **Werden offene Stellen ausgeschrieben?**
 Ja, auf der Website. Bewerbung per Online-Formular mit Datei-Upload direkt an die Inhaberin.

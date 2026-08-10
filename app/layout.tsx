@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s | Esso Battenberg",
   },
   description:
-    "Ihre Esso Tankstelle in 35088 Battenberg (Eder). Geöffnet Mo–Fr 08:30–16:00 Uhr, Tanken nur zu den Öffnungszeiten. Frische Sonntagsbrötchen von der Bäckerei Eckhardt, Waschanlage, Mietwagen und Werkstatt über unsere Partner.",
+    "Ihre Esso Tankstelle in 35088 Battenberg (Eder). Sieben Tage die Woche geöffnet, Tanken nur zu den Öffnungszeiten. Frische Sonntagsbrötchen von der Bäckerei Eckhardt, Waschanlage, Mietwagen und Werkstatt über unsere Partner.",
   keywords: [
     "Esso Tankstelle Battenberg",
     "Tanken Battenberg Eder",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title:
       "Esso Tankstelle Battenberg (Eder) – Tanken, Shop & frische Brötchen",
     description:
-      "Tanken, Shop und frische Sonntagsbrötchen – Ihre Esso Tankstelle in Battenberg (Eder). Geöffnet Mo–Fr 08:30–16:00 Uhr.",
+      "Tanken, Shop und frische Sonntagsbrötchen – Ihre Esso Tankstelle in Battenberg (Eder). Sieben Tage die Woche geöffnet.",
     images: [
       {
         url: "/Esso_hero.webp",
@@ -120,16 +120,10 @@ const businessJsonLd = {
     "@type": "City",
     name: "Battenberg (Eder)",
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "08:30",
-      closes: "16:00",
-      description:
-        "Öffnungszeiten – die Zapfsäulen sind ausschließlich während dieser Zeiten in Betrieb",
-    },
-  ],
+  // openingHoursSpecification fehlt bewusst: Die Station hat 7 Tage die Woche
+  // geöffnet, die exakten Uhrzeiten liegen aber noch nicht vor. Lieber keine
+  // Angabe als eine falsche — Google zeigt strukturierte Zeiten direkt an.
+  // TODO: eintragen, sobald die Zeiten da sind.
   amenityFeature: [
     {
       "@type": "LocationFeatureSpecification",
@@ -185,7 +179,7 @@ const faqJsonLd = {
       name: "Kann ich rund um die Uhr tanken?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nein. Die Zapfsäulen der Esso Tankstelle Battenberg (Eder) sind nur während der Öffnungszeiten in Betrieb – aktuell Montag bis Freitag von 08:30 bis 16:00 Uhr. Einen Nachttank-Automaten gibt es nicht.",
+        text: "Nein. Die Esso Tankstelle Battenberg (Eder) hat sieben Tage die Woche geöffnet, die Zapfsäulen sind aber nur während der Öffnungszeiten in Betrieb. Einen Nachttank-Automaten gibt es nicht.",
       },
     },
     {
@@ -217,7 +211,7 @@ const faqJsonLd = {
       name: "Wie sind die Öffnungszeiten an Feiertagen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Die Öffnungszeiten an Feiertagen werden von der Inhaberin individuell angepasst und rechtzeitig auf der Website angekündigt. Da die Zapfsäulen nur während der Öffnungszeiten laufen, gilt das auch fürs Tanken.",
+        text: "An hessischen Feiertagen gelten abweichende Zeiten, besonders um Weihnachten und Neujahr. Sie werden rechtzeitig auf der Startseite eingeblendet. Da die Zapfsäulen nur während der Öffnungszeiten laufen, gilt das auch fürs Tanken.",
       },
     },
     {
